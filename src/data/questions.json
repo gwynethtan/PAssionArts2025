@@ -14,7 +14,7 @@
   {
     "question": "Where do your people live?",
     "options": ["Eco friendly building", "Futuristic Flats", "HDB buildings", "Artistic buildings"],
-    "images": ["/house/house1.svg","/house/house2.svg","/house/house1.svg","/house/house1.svg"],
+    "images": ["/house/house1.svg","/house/house2.svg","/house/house3.svg","/house/house4.svg"],
     "location":["col-start-8 col-end-12 row-start-12 row-end-6 w-full h-full object-cover z-20"]
   },
   {
@@ -26,14 +26,14 @@
   {
   "question": "Look up the sky, what do you see?",
   "options": ["Birds", "Fireworks", "Kites", "Laterns"],
-  "images": ["/skyPiece/skyPiece4.svg","/skyPiece/skyPiece4.svg","/skyPiece/skyPiece3.svg","/skyPiece/skyPiece4.svg"],
+  "images": ["/skyPiece/skyPiece1.svg","/skyPiece/skyPiece2.svg","/skyPiece/skyPiece3.svg","/skyPiece/skyPiece4.svg"],
   "location":["col-start-1 col-end-4 row-start-4 row-end-1 w-full h-full z-20 animate-bounce","col-start-2 col-end-5 row-start-8 row-end-5 w-full h-full object-cover z-20 animate-bounce","col-start-6 col-end-9 row-start-6 row-end-3 w-full h-full object-cover z-20 animate-bounce", "col-start-10 col-end-13 row-start-4 row-end-1 w-full h-full object-cover z-20 animate-bounce"]
   },
     {
     "question": "What else is in the background?",
     "options": ["Green Trees", "Cities", "MRT tracks", "Flower Trees"],
     "images": ["/bgExtra/bgExtra1.svg","/bgExtra/bgExtra2.svg","/bgExtra/bgExtra3.svg","/bgExtra/bgExtra4.svg"],
-    "location":["col-start-1 col-end-13 row-start-12 row-end-9 w-full h-full object-cover z-10"]
+    "location":["col-start-1 col-end-13 row-start-12 row-end-7 w-full h-full object-cover z-10"]
   },
   {
     "question": "The city needs lights. What kind of lamp post do you want to light the way?",
