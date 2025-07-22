@@ -1,0 +1,22 @@
+[
+    {
+        "personalityType":"The Green Guardian",
+        "hastags":["#MetalStraw","#Cycle","#SGSoHot"],
+        "description":"You probably love the color green and have strong feelings about aircon temperatures."
+    },
+    {
+        "personalityType":"The Urban Technologist",
+        "hastags":["#SmartNation", "#FutureReady", "#GenAI"],
+        "description":"Always one step ahead, you probably dreamed of developing your own game and have tried using new tech."
+    },
+    {
+        "personalityType":"The Heartland Friend",
+        "hastags":["#Kopitiam","#Kakis","#HDBFlats"],
+        "description":"You're the kind soul who says hi to the uncle at the void deck and knows which Cai Png shop has the best deals."
+    },
+    {
+        "personalityType":"The Art Culture Enthusiast",
+        "hastags":["#MuseumHopper", "#SupportLocal", "#GotTaste"],
+        "description":"You once cried at a dance performance and still think about that one mural in Tiong Bahru."
+    }
+]
