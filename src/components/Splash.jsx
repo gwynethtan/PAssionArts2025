@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import NavLinkButton from '../components/NavLinkButton'
 import { useEffect, useState } from 'react';
 import { personalityRef } from '/PAssionArts2025/firebase';
-    import { getDatabase,update,onValue,remove,push, ref, get, set,query,limitToFirst,limitToLast,orderByChild,equalTo,runTransaction} from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
+import { getDatabase,update,onValue,remove,push, ref, get, set,query,limitToFirst,limitToLast,orderByChild,equalTo,runTransaction} from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
 
 const Splash = () => {
   const [count, setCount] = useState(0);
