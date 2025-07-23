@@ -14,56 +14,49 @@ body{
   mask-image:linear-gradient(to right,transparent,#000 10% 90%,transparent);
 }
 @media screen and (max-width: 759px) {
-  .singularBuild{
+  .content{
     animation:autoRun 4s linear infinite;
-    animation-delay: calc(2s*var(--position));
     position:absolute;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     width: 100%;
   }
 }
 
 /* Medium screens: tablets */
 @media screen and (min-width: 760px) and (max-width: 1024px) {
-  .singularBuild{
+  .content{
     animation:autoRun 8s linear infinite;
-    animation-delay: calc(2s*var(--position));
     position:absolute;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     width: 100%;
   }
 }
 
 /* Large screens: desktops and up */
 @media screen and (min-width: 1025px) and (max-width: 1400px) {
-  .singularBuild{
+  .content{
     animation:autoRun 16s linear infinite;
-    animation-delay: calc(4s*var(--position));
     position:absolute;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1401px) and (max-width: 5000px) {
-  .singularBuild{
+  .content{
     animation:autoRun 24s linear infinite;
-    animation-delay: calc(3s*var(--position));
     position:absolute;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     width: 100%;
   }
 }
 
 /* Large screens: desktops and up */
 @media screen and (min-width: 5000px) {
-  .singularBuild{
+  .content{
     animation:autoRun 12s linear infinite;
-    animation-delay: calc(3s*var(--position));
     position:absolute;
-    transform: translateX(100% * var(--position));
-     animation-fill-mode: both;
-  
+    transform: translateX(100%);
     width: 100%;
   }
 }
