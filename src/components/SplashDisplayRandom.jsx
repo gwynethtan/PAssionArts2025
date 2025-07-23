@@ -8,11 +8,21 @@ const SplashDisplayRandom = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth >= 1025) {
+            if (window.innerWidth >= 1400) {
                 setNumBuilds(4);
-            } else {
+                console.log("hi");
+            } 
+            else if (window.innerWidth>=1350){
+                setNumBuilds(3);
+            }
+            else if (window.innerWidth>=900){
+                setNumBuilds(2);
+            }            
+            else {
                 setNumBuilds(1);
             }
+                console.log('Current width:', window.innerWidth);
+
         };
 
         // Initial check
@@ -42,7 +52,7 @@ const SplashDisplayRandom = () => {
                 </NavLink>
             </div>
 
-            <div className={`flex flex-wrap justify-between`}>
+            <div className={`flex flex-wrap justify-center gap-x-10 gap-y-8`}>
                 {Array.from({ length: numBuilds }).map((_, i) => (
                     <RandomSingularBuild key={i} />
                 ))}
