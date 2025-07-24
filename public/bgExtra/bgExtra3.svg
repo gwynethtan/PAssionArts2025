@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1217 505" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:1.5;">
-    <g transform="matrix(1,0,0,1,-11048.1,-5245.23)">
-        <g id="Artboard6" transform="matrix(5.73101,0,0,1.62687,-49341.5,-1096.32)">
+<svg width="100%" height="100%" viewBox="0 0 1668 692" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-10829.8,-5867.03)">
+        <g id="Artboard6" transform="matrix(7.85601,0,0,2.2301,-71951.6,-2825.9)">
             <rect x="10537.3" y="3898" width="212.272" height="310" style="fill:none;"/>
             <clipPath id="_clip1">
                 <rect x="10537.3" y="3898" width="212.272" height="310"/>
@@ -53,7 +53,7 @@
                 <g transform="matrix(0.18145,-3.29586e-16,7.07122e-17,-0.101574,8824.15,4500.37)">
                     <rect x="9432" y="5389.6" width="1195.83" height="164.686" style="fill:rgb(46,63,89);"/>
                 </g>
-                <g transform="matrix(0.375409,0,0,0.375409,6644.83,2439.09)">
+                <g transform="matrix(0.375409,0,0,0.375409,6620.41,2439.09)">
                     <g transform="matrix(0.174489,0,0,0.614676,8895.16,673.882)">
                         <path d="M9584.97,5327.96L9534.6,5327.96L9534.6,5339.46C9534.6,5342.58 9535.84,5345.58 9538.05,5347.79C9540.26,5350 9543.26,5351.24 9546.38,5351.24L9573.18,5351.24C9576.31,5351.24 9579.3,5350 9581.51,5347.79C9583.72,5345.58 9584.97,5342.58 9584.97,5339.46C9584.97,5333.69 9584.97,5327.96 9584.97,5327.96Z" style="fill:rgb(158,255,255);"/>
                     </g>
