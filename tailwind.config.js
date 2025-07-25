@@ -14,13 +14,14 @@ module.exports = {
     ...Array.from({ length: 13 }, (_, i) => `col-end-${i + 1}`),
     ...Array.from({ length: 13 }, (_, i) => `row-start-${i + 1}`),
     ...Array.from({ length: 13 }, (_, i) => `row-end-${i + 1}`),
-    "object-cover", "z-0", "z-10", "z-20", "z-30", "w-full", "h-full", "animate-bounce"
+    "object-cover","object-fit","object-fill", "z-0", "z-10", "z-20", "z-30", "w-full", "h-full", "animate-bounce,","justify-items-center"
   ],
   theme: {
 	screens: {
 		'sm': '640px',    // min-width: 640px
 		'md': '768px',    // min-width: 768px (iPad starts here)
 		'lg': '1301px',   // min-width: 1301px
+		'xl': '5000px'
 	  },
   	extend: {
   		colors: {

@@ -47,7 +47,6 @@ return get(ref(db, '/personality'))
             const personalityIds = Object.keys(data);
             const randomId = personalityIds[Math.floor(Math.random() * personalityIds.length)];
             const randomPersonalityDetails = data[randomId];
-            console.log(randomPersonalityDetails); // This will log the data when it's available
             return randomPersonalityDetails; // This is the data you want to return
         } else {
             console.log("No data available");
@@ -61,7 +60,8 @@ return get(ref(db, '/personality'))
 }
 
 export const loadAllPersonality = async () => {
-  const snapshot = await get(personalityRef);
+  const latest30Query = query(personalityRef, limitToLast(30));
+  const snapshot = await get(latest30Query);
   if (snapshot.exists()) {
     return snapshot.val(); // returns object of all users
   } else {
@@ -70,6 +70,20 @@ export const loadAllPersonality = async () => {
   }
 };
 
+export function getPersonalityCount(setCount) {
+  const calculatePersonalityCount = onValue(personalityRef, (snapshot) => {
+    if (snapshot.exists()) {
+      const data = snapshot.val();
+      const numberOfNodes = Object.keys(data).length;
+      setCount(numberOfNodes);
+    } else {
+      setCount(0);
+    }
+  }, (error) => {
+    console.error("Error fetching data:", error);
+  });
+  return calculatePersonalityCount; 
+}
 
     
     
