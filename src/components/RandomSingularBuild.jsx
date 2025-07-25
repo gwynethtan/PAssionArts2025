@@ -13,15 +13,12 @@ const RandomSingularBuild=()=>{
             try {
                 setLoading(true);
                 const data = await loadRandomPersonality();
-                console.log("Data in React component:", data); 
                 if (data) {
                     var optionList=[];
                     setPersonalityData(data.personalityType);
                     data.chosenOptions.forEach((option) => {
                       optionList[option.question]=option.selectedOption;
-                      console.log(optionList);
                     });
-                    console.log(optionList);
                     setQuizChoices(optionList);
                 }
             } catch (err) {

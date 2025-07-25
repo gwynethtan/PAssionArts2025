@@ -3,7 +3,6 @@ import questions from '../data/questions.json'
 import personality from '../data/personality.json'
 
 export const RenderImages=({quizChoices=[]})=>{
-      console.log (quizChoices);
       return quizChoices.flatMap((quizChoice, questionNumber) => { 
         let questionDetails=questions[questionNumber];
         return questionDetails.location.map((location) => (
@@ -13,7 +12,6 @@ export const RenderImages=({quizChoices=[]})=>{
 }
 
 const SingularBuild=({quizChoices=[]})=>{
-  console.log(quizChoices);
   if (quizChoices.length > 0){
     return (
       <div className="h-[100vw] w-[75vw] lg:h-[74vh] lg:w-[56vh] grid grid-cols-12 grid-rows-12 rounded-xl overflow-hidden">
@@ -37,7 +35,7 @@ export const TaggedSingularBuild=({quizChoices=[],personalityData})=>{
         <div className="h-[100vw] md:h-[60vw] lg:h-[56vh] grid grid-cols-12 grid-rows-12 rounded-t-xl overflow-hidden">
             <RenderImages quizChoices={quizChoices}/>
         </div>
-        <div className="rounded-b-xl no-wrap py-4 bg-main">
+        <div className="rounded-b-xl no-wrap py-4 lg:py-[3vh] bg-main">
           <div className="text-white text-md text-center font-regular">
               Created by
           </div>

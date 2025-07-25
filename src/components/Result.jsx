@@ -5,7 +5,7 @@ import SingularBuild from './SingularBuild'
 import NavLinkButton from './NavLinkButton'
 import { motion } from "framer-motion";
 
-const Result = ({ quizChoices , reset }) => {
+const Result = ({ quizChoices }) => {
   const hasSubmitted = useRef(false);
   const [userHighestOptionType, getHighestOptionType]=useState(0);
   useEffect(() => {
@@ -47,10 +47,10 @@ const Result = ({ quizChoices , reset }) => {
               <div className="bg-main text-white font-medium rounded-full text-center p-2 px-4 lg:text-xl">{hastag}</div>
             ))}
           </div>
-          <p className="text-main text-lg lg:text-2xl font-medium text-center">
+          <p className="text-main text-md lg:text-2xl font-medium text-center">
             {personality[userHighestOptionType].description}
           </p>
-          <NavLinkButton link="/" text="Go Home" />
+          <NavLinkButton link="" text="Go Home" />
         </div>
       </div>
     </motion.section>

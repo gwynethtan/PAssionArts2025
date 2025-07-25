@@ -10,7 +10,6 @@ const SplashDisplayRandom = () => {
         const handleResize = () => {
             if (window.innerWidth >= 1400) {
                 setNumBuilds(4);
-                console.log("hi");
             } 
             else if (window.innerWidth>=1350){
                 setNumBuilds(3);
@@ -21,17 +20,9 @@ const SplashDisplayRandom = () => {
             else {
                 setNumBuilds(1);
             }
-                console.log('Current width:', window.innerWidth);
-
         };
-
-        // Initial check
         handleResize();
-
-        // Add event listener
         window.addEventListener('resize', handleResize);
-
-        // Cleanup
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
@@ -51,7 +42,6 @@ const SplashDisplayRandom = () => {
                     </button>
                 </NavLink>
             </div>
-
             <div className={`flex flex-wrap justify-center gap-x-10 gap-y-8`}>
                 {Array.from({ length: numBuilds }).map((_, i) => (
                     <RandomSingularBuild key={i} />
