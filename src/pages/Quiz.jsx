@@ -20,7 +20,6 @@ const Quiz=()=>{
 
   const handleUpdatedOption = (optionNumber) => {
     storeQuizChoices((prev) => {
-      console.log("Selected:", optionNumber, "for Q", questionNumber);
       const updatedOptions = [...prev];
       updatedOptions[questionNumber] = optionNumber;
       return updatedOptions;
@@ -37,8 +36,6 @@ const Quiz=()=>{
       storeQuizChoices([]);
   }
 
-  
-
   const handleNext = () => {
     if (screen=="intro"){
       setScreen("quiz");
@@ -48,7 +45,6 @@ const Quiz=()=>{
     }
     else if (questionNumber < questions.length-1) {
       setQuestionNumber((prev) => prev + 1);
-      console.log(questionNumber);
     }
     else if (questionNumber==questions.length-1){
       setScreen("submit");
@@ -62,17 +58,12 @@ const Quiz=()=>{
     else if (questionNumber>0) {
       setQuestionNumber((prev) => prev - 1);
     }
-    else if (questionNumber==0){
-      setScreen("intro");
-      console.log("intro on");
-    }
   };
 
   if (screen == "intro") return <QuizIntro onClick={()=>setScreen("quiz")}/>;
   if (screen === "submit") return <SubmitQuiz quizChoices={quizChoices} submitQuiz={submitQuiz} handleBack={handleBack} />;
-  if (screen == "result") return <Result quizChoices={quizChoices} reset={resetQuiz}/>;
+  if (screen == "result") return <Result quizChoices={quizChoices}/>;
 
-      //  <SingularBuild quizChoices={quizChoices}/>
   return (
     <section className="min-h-screen w-screen grid lg:grid-cols-2 grid-cols-1 sm:pt-24 pt-20 p-8">
       <div className="justify-center flex">
