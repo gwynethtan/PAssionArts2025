@@ -32,7 +32,6 @@ body{
   }
 }
 
-/* Large screens: desktops and up */
 @media screen and (min-width: 1025px) and (max-width: 1400px) {
   .content{
     animation:autoRun 16s linear infinite;
@@ -51,7 +50,6 @@ body{
   }
 }
 
-/* Large screens: desktops and up */
 @media screen and (min-width: 5000px) {
   .content{
     animation:autoRun 12s linear infinite;
@@ -60,6 +58,24 @@ body{
     width: 100%;
   }
 }
+@media screen and (max-width: 1024px)  {
+  .goog-te-gadget .goog-te-combo {
+    color: #BC3030;
+    font-family: "Inter", sans-serif;
+    font-size:medium;
+  }
+}
+
+@media screen and (min-width: 1025px)  {
+  .goog-te-gadget .goog-te-combo {
+    color: #BC3030;
+    font-family: "Inter", sans-serif;
+    font-size:regular;
+    border:hidden;
+    display:block !important;
+  }
+}
+
 
 @keyframes autoRun{
   from {
@@ -77,4 +93,19 @@ scrollbar-width: none;
 .y-aspect-ratio {
   height: 100%;
   width: calc(100% * 3 / 4); 
+}
+
+
+
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color:transparent !important;
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd{
+   display: none;
 }
