@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/react.svg";
 import "../index.css";
+import LanguageSelector from './LanguageSelector';
 
 const NavigationBar = ({navDetails}) => { 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const NavigationBar = ({navDetails}) => {
       return (
         <a href={link}
         onClick={closeMenu}
-        className="block py-3 px-5 md:pl-10 md:p-0 text-main rounded-sm md:hover:bg-transparent md:border-0"
+        className="block py-3 px-5 lg:pl-10 lg:p-0 text-main rounded-sm lg:hover:bg-transparent lg:border-0"
         >
           {linkName}
         </a>
@@ -30,7 +31,7 @@ const NavigationBar = ({navDetails}) => {
         <NavLink 
           to={link}
           onClick={closeMenu}
-          className="block py-3 px-5 md:pl-10 md:p-0 text-main rounded-sm md:hover:bg-transparent md:border-0"
+          className="block py-3 px-5 lg:pl-10 lg:p-0 text-main rounded-sm lg:hover:bg-transparent lg:border-0"
         >
           {linkName}
         </NavLink>    
@@ -39,16 +40,16 @@ const NavigationBar = ({navDetails}) => {
   }
 
   return (
-      <nav className="bg-white top-0 h-16 z-50 fixed w-screen sm:px-16">
+      <nav className="bg-white top-0 h-16 z-50 fixed sm:w-screen sm:px-16">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between pt-4 md:mx-auto md:p-4">
           <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse ml-4">
-            <img src="/passionArts.png" className="h-8" alt="PAssionArts Logo" />
+            <img src="/passionArts.png" className="h-8" alt="PAssionArts Logo"/>
           </a>
 
           <button 
             onClick={toggleMenu}
             type="button" 
-            className="inline-flex items-center mr-4 p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden" 
+            className="inline-flex items-center mr-4 p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden" 
             aria-controls="navbar-solid-bg" 
             aria-expanded={isMenuOpen}
           >
@@ -58,10 +59,10 @@ const NavigationBar = ({navDetails}) => {
           </button>
           
           <div 
-            className={`${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'} transition-all duration-300 overflow-hidden w-screen md:max-h-none md:opacity-100 md:block md:w-auto`}
+            className={`${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'} transition-all duration-300 overflow-hidden w-screen lg:max-h-none md:opacity-100 lg:block lg:w-auto`}
             id="navbar-solid-bg"
           >
-            <ul className="flex flex-col font-medium bg-nav rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+            <ul className="flex flex-col font-medium bg-nav rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent">
               {
                 navDetails.map((navDetail,index)=>(
                   <li key={index}>
@@ -69,6 +70,9 @@ const NavigationBar = ({navDetails}) => {
                   </li>
                 ))
               }
+              <li className="block py-3 px-5 lg:pl-10 lg:p-0 text-main rounded-sm lg:hover:bg-transparent lg:border-0">
+                <LanguageSelector/>
+              </li>
             </ul>
           </div>
         </div>
