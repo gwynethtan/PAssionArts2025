@@ -10,7 +10,7 @@ const About=()=>{
         viewport={{once:false}}
         className="min-h-[80vh] bg-main sm:mx-24 sm:my-8 m-0 rounded-xl flex justify-center items-center p-10 py-10">
             <div className="flex flex-col items-center" >
-                <span className="text-5xl font-bold text-white mb-8 text-center">What is PassionArts 2025?</span>
+                <span className="text-5xl font-bold text-white mb-8 text-center">What is PAssionArts 2025?</span>
                 <p className="sm:text-xl text-lg font-medium text-white text-center mb-8">
                     Residents are invited to participate in workshops, performances, and art installations throughout the celebration. Themed “Our Neighbourhood Gems”, this year’s festival will unfold across more than 60 festival villages, celebrating the unique identities that make our neighbourhoods truly special.
                 </p>
