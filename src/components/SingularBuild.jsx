@@ -12,7 +12,7 @@ export const RenderImages=({quizChoices=[]})=>{
 }
 
 const SingularBuild=({quizChoices=[]})=>{
-  if (quizChoices.length > 0){
+  if (quizChoices.length > 0 && quizChoices.every(Number.isInteger)){
     return (
       <div className="h-[100vw] w-[75vw] lg:h-[74vh] lg:w-[56vh] grid grid-cols-12 grid-rows-12 rounded-xl overflow-hidden">
         <RenderImages quizChoices={quizChoices}/>

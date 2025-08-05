@@ -41,13 +41,21 @@ const AllSingularBuilds = () => {
           blurBorders={false}
           blurBorderColor={'#fff'}
           >
-            {allBuilds.map((build,index) => (
-              <Slider.Slide key={index}>
-                <TaggedSingularBuild
-                  quizChoices={build.quizChoices}
-                  personalityData={build.personalityType}
-                />
-              </Slider.Slide>
+            {allBuilds
+              .filter(
+                (build) =>
+                  build.personalityType != null &&
+                  Number.isInteger(build.personalityType) &&
+                  Array.isArray(build.quizChoices) &&
+                  build.quizChoices.every((choice) => Number.isInteger(choice))
+              )
+              .map((build, index) => (
+                <Slider.Slide key={index}>
+                  <TaggedSingularBuild
+                    quizChoices={build.quizChoices}
+                    personalityData={build.personalityType}
+                  />
+                </Slider.Slide>
             ))}
           </Slider>
         </div>

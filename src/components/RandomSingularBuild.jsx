@@ -31,7 +31,7 @@ const RandomSingularBuild=()=>{
         fetchData();
     }, []);
 
-    if (quizChoices){
+    if (personalityData != null && Number.isInteger(personalityData) && Array.isArray(quizChoices) && quizChoices.every(Number.isInteger)){
         return(
         <TaggedSingularBuild quizChoices={quizChoices} personalityData={personalityData}/>
         );
